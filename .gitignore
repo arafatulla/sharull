@@ -16,5 +16,4 @@
 
 *.scss
 scss
-*/design/*.jpg
-*/design/*.png
+*.css.map
