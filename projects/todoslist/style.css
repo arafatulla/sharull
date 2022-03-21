@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #f6d365, #b15e48) no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    font-size: 1.5rem;
+}
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+}
+form button{
+    color: #b15e48;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3x ease;
+    
+}
+form button:hover{
+    background-color: #e97d60;
+    color: white;
+    
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    width: 70vw;
+    background-color: white;
+    color: #000;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.todo li{
+    flex: 1;
+}
+.trashbtn, .checkbtn{
+    background: #ff6f47;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.checkbtn{
+    background: rgb(77, 167, 197);
+}
+.todo-item{
+    padding: 0 0.5rem;
+}
+.fa-check-circle, .fa-trash{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+select{
+    color: #ff6f47;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+.select::after{
+    content: '\25BC';
+    position: absolute;
+    background-color: #ff6f47;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+.select:hover::after{
+    background-color: white;
+    color: #ff6f47;
+    transform: rotateZ(180deg) translateY(5px);
+}
+
+
+
+
+
+
+
+
+
+/* @keyframes pop-in {
+    from{
+        transform: translateX(-100%) scale(0);
+    }
+    50%{
+        transform: translateX(0) scale(0);
+    }
+    to{
+        transform: translateX(0%) scale(1);
+    }
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: lightblue;
+    transform: translateX(-100%);
+    animation: pop-in 5s forwards ;
+} */
