@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+.flex-j-c {
+  justify-content: center;
+}
+.flex-a-c {
+  align-items: center;
+}
+.flex-j-se {
+  justify-content: space-evenly;
+}
+.flex-a-e {
+  align-items: end;
+}
+.flex-d-c {
+  flex-direction: column;
+}
+.flex-d-r {
+  flex-direction: row;
+}
+
+body {
+  background: #674baf;
+  color: white;
+}
+
+section .container {
+  display: grid;
+  grid-template-rows: 5rem repeat(2, 1fr) 5rem;
+  position: relative;
+}
+@media (min-width: 64em) {
+  section .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 4rem 1fr 5rem;
+  }
+}
+section .container .mobile {
+  position: absolute;
+  display: block;
+  z-index: -1;
+  height: 20rem;
+}
+@media (min-width: 64em) {
+  section .container .mobile {
+    display: none;
+  }
+}
+section .container .desktop {
+  position: absolute;
+  display: none;
+  z-index: -1;
+}
+@media (min-width: 64em) {
+  section .container .desktop {
+    display: inline;
+  }
+}
+section .container__logo {
+  padding-left: 2rem;
+}
+@media (min-width: 64em) {
+  section .container__logo {
+    grid-column: 1/3;
+  }
+}
+section .container__logo img {
+  width: 7rem;
+}
+section .container__image {
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media (min-width: 64em) {
+  section .container__image {
+    padding-bottom: 4rem;
+    grid-row: 2/4;
+  }
+}
+section .container__text {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+section .container__text .head {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+section .container__text .head h2 {
+  font-size: 1rem;
+}
+section .container__text .desc {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+section .container__text .desc p {
+  font-size: 0.8rem;
+}
+section .container__text .btn {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+section .container__text .btn button {
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 3rem;
+  color: #674baf;
+  font-size: 0.8rem;
+}
+section .container__text .btn button:hover {
+  background-color: #e882e8;
+  color: white;
+}
+@media (min-width: 64em) {
+  section .container__text {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: left;
+    padding-top: 4rem;
+  }
+  section .container__text .head {
+    padding-right: 2rem;
+  }
+  section .container__text .head h2 {
+    font-size: 2rem;
+  }
+  section .container__text .desc p {
+    font-size: 1rem;
+  }
+  section .container__text .btn button {
+    padding: 0.5rem 3rem;
+  }
+}
+section .container__icons {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+@media (min-width: 64em) {
+  section .container__icons {
+    padding-left: 18rem;
+    padding-right: 2rem;
+    grid-column: 2/3;
+  }
+}
+section .container__icons div {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+section .container__icons div:hover {
+  color: #e882e8;
+  border-color: #e882e8;
+}/*# sourceMappingURL=style.css.map */
