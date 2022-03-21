@@ -1,0 +1,141 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 95vh;
+  background-color: #19a2ae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: -2;
+}
+.container .card {
+  width: 350px;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+.container .card__header {
+  height: 120px;
+  overflow: hidden;
+}
+.container .card__image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(37%, 70%);
+}
+.container .card__image img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 5px white;
+}
+.container .card__name {
+  height: 70px;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container .card__name .three {
+  margin-top: 10px;
+}
+.container .card__details {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container .card__details-1 {
+  width: 33.33%;
+  text-align: center;
+}
+.container .card__details-2 {
+  width: 33.33%;
+  text-align: center;
+}
+.container .card__details-3 {
+  width: 33.33%;
+  text-align: center;
+}
+
+.light {
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+.hard {
+  font-weight: 700;
+  color: #2d3248;
+  font-size: 18px;
+}
+
+.upper {
+  font-size: 10px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-height: 90vh;
+    overflow: scroll;
+  }
+  .container .after {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-80%, -60%);
+    z-index: -1;
+  }
+  .container .before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(80%, 60%);
+    z-index: -1;
+  }
+  .container .card {
+    height: 400px;
+  }
+}
+@media (min-width: 376px) {
+  .container {
+    overflow: hidden;
+  }
+  .container .after {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-35%, -60%);
+    z-index: -1;
+  }
+  .container .before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(35%, 70%);
+    z-index: -1;
+  }
+  .container .card {
+    max-height: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
