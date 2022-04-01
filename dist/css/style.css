@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:active, a:hover, a:focus {
+  color: black;
+  text-decoration: none;
+}
+
+#navbarNav {
+  justify-content: flex-end;
+  padding-right: 7rem;
+}
+
+.top-logo {
+  padding-left: 4rem;
+}
+.top-logo a {
+  position: relative;
+}
+.top-logo a div {
+  position: absolute;
+  transform: rotateY(180deg) translateX(-28px) translateY(1px);
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+main .intro {
+  padding: 12rem 3rem;
+  width: 100%;
+  background-image: url(/elements/businessman-with-sword.svg);
+  background-position: center;
+  background-position-x: right;
+  background-position-y: -12.5rem;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+main .intro .work {
+  padding-right: 25%;
+  width: 50%;
+}
+main .intro .work li a:hover {
+  color: #994fa8;
+}
+@media (max-width: 400px) {
+  main .intro {
+    width: 100%;
+    padding: 10rem 1rem;
+    background-size: contain;
+    background-position-x: 1rem;
+    background-position-y: -4.25rem;
+    background-size: 150%;
+  }
+  main .intro h2 {
+    text-align: center;
+  }
+  main .intro .work {
+    width: 100%;
+    padding-right: 10%;
+    text-align: center;
+  }
+}
+main .fun {
+  padding: 1rem 30rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .skills {
+  padding: 3rem 3rem;
+  width: 100%;
+}
+main .skills h3 {
+  text-align: center;
+}
+main .skills .level {
+  width: 80%;
+  height: 5px;
+  margin: 2rem auto;
+  background-color: aquamarine;
+  position: relative;
+}
+main .skills .level::after {
+  content: "0%";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main .skills .level::before {
+  content: "100%";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .skills > div {
+  width: 100%;
+  display: flex;
+}
+main .skills > div .skills__title {
+  width: 10%;
+}
+main .skills > div .skills__level {
+  height: 5px;
+  margin: auto 0;
+}
+main .skills > div:nth-child(3) {
+  color: #46bfe8;
+}
+main .skills > div:nth-child(3) .skills__level {
+  width: 75%;
+  position: relative;
+  background-color: #46bfe8;
+}
+main .skills > div:nth-child(3) .skills__level::before {
+  content: "75%";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .skills > div:nth-child(4) {
+  color: #ceb52a;
+}
+main .skills > div:nth-child(4) .skills__level {
+  width: 75%;
+  position: relative;
+  background-color: #ceb52a;
+}
+main .skills > div:nth-child(4) .skills__level::before {
+  content: "75%";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .skills > div:nth-child(5) {
+  color: #88c988;
+}
+main .skills > div:nth-child(5) .skills__level {
+  width: 60%;
+  position: relative;
+  background-color: #88c988;
+}
+main .skills > div:nth-child(5) .skills__level::before {
+  content: "60%";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .skills > div:nth-child(6) {
+  color: #00516b;
+}
+main .skills > div:nth-child(6) .skills__level {
+  width: 50%;
+  position: relative;
+  background-color: #00516b;
+}
+main .skills > div:nth-child(6) .skills__level::before {
+  content: "50%";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .skills > div:nth-child(7) {
+  color: #dd7443;
+}
+main .skills > div:nth-child(7) .skills__level {
+  width: 40%;
+  position: relative;
+  background-color: #dd7443;
+}
+main .skills > div:nth-child(7) .skills__level::before {
+  content: "40%";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .skills > div:nth-child(8) {
+  color: #994fa8;
+}
+main .skills > div:nth-child(8) .skills__level {
+  width: 40%;
+  position: relative;
+  background-color: #994fa8;
+}
+main .skills > div:nth-child(8) .skills__level::before {
+  content: "40%";
+  position: absolute;
+  top: 0;
+  right: 0;
+}/*# sourceMappingURL=style.css.map */
