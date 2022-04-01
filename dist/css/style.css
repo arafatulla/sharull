@@ -23,8 +23,10 @@ a, a:active, a:hover, a:focus {
   padding-right: 7rem;
 }
 
-.top-logo {
-  padding-left: 4rem;
+@media (min-width: 375px) {
+  .top-logo {
+    padding-left: 4rem;
+  }
 }
 .top-logo a {
   position: relative;
@@ -52,9 +54,9 @@ main .intro .work {
   width: 50%;
 }
 main .intro .work li a:hover {
-  color: #994fa8;
+  color: rgb(153, 79, 168);
 }
-@media (max-width: 400px) {
+@media (max-width: 375px) {
   main .intro {
     width: 100%;
     padding: 10rem 1rem;
@@ -116,12 +118,12 @@ main .skills > div .skills__level {
   margin: auto 0;
 }
 main .skills > div:nth-child(3) {
-  color: #46bfe8;
+  color: rgb(70, 191, 232);
 }
 main .skills > div:nth-child(3) .skills__level {
   width: 75%;
   position: relative;
-  background-color: #46bfe8;
+  background-color: rgb(70, 191, 232);
 }
 main .skills > div:nth-child(3) .skills__level::before {
   content: "75%";
@@ -130,12 +132,12 @@ main .skills > div:nth-child(3) .skills__level::before {
   right: 0;
 }
 main .skills > div:nth-child(4) {
-  color: #ceb52a;
+  color: rgb(206, 181, 42);
 }
 main .skills > div:nth-child(4) .skills__level {
   width: 75%;
   position: relative;
-  background-color: #ceb52a;
+  background-color: rgb(206, 181, 42);
 }
 main .skills > div:nth-child(4) .skills__level::before {
   content: "75%";
@@ -144,12 +146,12 @@ main .skills > div:nth-child(4) .skills__level::before {
   right: 0;
 }
 main .skills > div:nth-child(5) {
-  color: #88c988;
+  color: rgb(136, 201, 136);
 }
 main .skills > div:nth-child(5) .skills__level {
   width: 60%;
   position: relative;
-  background-color: #88c988;
+  background-color: rgb(136, 201, 136);
 }
 main .skills > div:nth-child(5) .skills__level::before {
   content: "60%";
@@ -158,12 +160,12 @@ main .skills > div:nth-child(5) .skills__level::before {
   right: 0;
 }
 main .skills > div:nth-child(6) {
-  color: #00516b;
+  color: rgb(0, 81, 107);
 }
 main .skills > div:nth-child(6) .skills__level {
   width: 50%;
   position: relative;
-  background-color: #00516b;
+  background-color: rgb(0, 81, 107);
 }
 main .skills > div:nth-child(6) .skills__level::before {
   content: "50%";
@@ -172,12 +174,12 @@ main .skills > div:nth-child(6) .skills__level::before {
   right: 0;
 }
 main .skills > div:nth-child(7) {
-  color: #dd7443;
+  color: rgb(221, 116, 67);
 }
 main .skills > div:nth-child(7) .skills__level {
   width: 40%;
   position: relative;
-  background-color: #dd7443;
+  background-color: rgb(221, 116, 67);
 }
 main .skills > div:nth-child(7) .skills__level::before {
   content: "40%";
@@ -186,12 +188,12 @@ main .skills > div:nth-child(7) .skills__level::before {
   right: 0;
 }
 main .skills > div:nth-child(8) {
-  color: #994fa8;
+  color: rgb(153, 79, 168);
 }
 main .skills > div:nth-child(8) .skills__level {
   width: 40%;
   position: relative;
-  background-color: #994fa8;
+  background-color: rgb(153, 79, 168);
 }
 main .skills > div:nth-child(8) .skills__level::before {
   content: "40%";
