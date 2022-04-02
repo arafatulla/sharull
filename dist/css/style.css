@@ -1,3 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
 li {
   list-style: none;
 }
@@ -31,11 +46,10 @@ a, a:active, a:hover, a:focus {
 main .intro {
   padding: 12rem 3rem;
   width: 100%;
-  background-image: url(/elements/businessman-with-sword.svg);
+  background-image: url(/elements/hero-bg.svg);
   background-position: center;
-  background-position-x: right;
-  background-position-y: -12.5rem;
-  background-size: 50%;
+  background-size: contain;
+  background-position: right;
   background-repeat: no-repeat;
 }
 main .intro .work {
@@ -50,14 +64,15 @@ main .intro .work li a:hover {
     width: 100%;
     padding: 10rem 1rem;
     background-size: contain;
-    background-position-x: 1rem;
-    background-position-y: -4.25rem;
-    background-size: 150%;
   }
   main .intro h2 {
     text-align: center;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
   }
   main .intro .work {
+    -webkit-backdrop-filter: blur(5px) saturate(80%);
+            backdrop-filter: blur(5px) saturate(80%);
     width: 100%;
     padding-right: 10%;
     text-align: center;
@@ -69,9 +84,21 @@ main .fun {
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width: 375px) {
+  main .fun {
+    padding: 0;
+  }
+}
 main .skills {
   padding: 3rem 3rem;
   width: 100%;
+  margin-top: 2rem;
+}
+@media (max-width: 375px) {
+  main .skills {
+    padding: 0;
+    padding-left: 0.4rem;
+  }
 }
 main .skills h3 {
   text-align: center;
@@ -82,6 +109,13 @@ main .skills .level {
   margin: 2rem auto;
   background-color: aquamarine;
   position: relative;
+}
+@media (max-width: 375px) {
+  main .skills .level {
+    margin: 0;
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+  }
 }
 main .skills .level::after {
   content: "0%";
@@ -100,33 +134,29 @@ main .skills > div {
   display: flex;
 }
 main .skills > div .skills__title {
-  width: 10%;
+  width: 2.25rem;
 }
 main .skills > div .skills__level {
   height: 5px;
   margin: auto 0;
 }
-main .skills > div:nth-child(3) {
-  color: rgb(70, 191, 232);
+@media (max-width: 375px) {
+  main .skills > div .skills__level {
+    margin: auto 0.75rem;
+  }
 }
-main .skills > div:nth-child(3) .skills__level {
-  width: 75%;
-  position: relative;
-  background-color: rgb(70, 191, 232);
-}
-main .skills > div:nth-child(3) .skills__level::before {
-  content: "75%";
-  position: absolute;
-  top: 0;
-  right: 0;
+@media (max-width: 375px) {
+  main .skills > div {
+    margin-top: 0.5rem;
+  }
 }
 main .skills > div:nth-child(4) {
-  color: rgb(206, 181, 42);
+  color: rgb(70, 191, 232);
 }
 main .skills > div:nth-child(4) .skills__level {
   width: 75%;
   position: relative;
-  background-color: rgb(206, 181, 42);
+  background-color: rgb(70, 191, 232);
 }
 main .skills > div:nth-child(4) .skills__level::before {
   content: "75%";
@@ -135,54 +165,54 @@ main .skills > div:nth-child(4) .skills__level::before {
   right: 0;
 }
 main .skills > div:nth-child(5) {
-  color: rgb(136, 201, 136);
+  color: rgb(206, 181, 42);
 }
 main .skills > div:nth-child(5) .skills__level {
-  width: 60%;
+  width: 75%;
   position: relative;
-  background-color: rgb(136, 201, 136);
+  background-color: rgb(206, 181, 42);
 }
 main .skills > div:nth-child(5) .skills__level::before {
-  content: "60%";
+  content: "75%";
   position: absolute;
   top: 0;
   right: 0;
 }
 main .skills > div:nth-child(6) {
-  color: rgb(0, 81, 107);
+  color: rgb(136, 201, 136);
 }
 main .skills > div:nth-child(6) .skills__level {
-  width: 50%;
+  width: 60%;
   position: relative;
-  background-color: rgb(0, 81, 107);
+  background-color: rgb(136, 201, 136);
 }
 main .skills > div:nth-child(6) .skills__level::before {
-  content: "50%";
+  content: "60%";
   position: absolute;
   top: 0;
   right: 0;
 }
 main .skills > div:nth-child(7) {
-  color: rgb(221, 116, 67);
+  color: rgb(0, 81, 107);
 }
 main .skills > div:nth-child(7) .skills__level {
-  width: 40%;
+  width: 50%;
   position: relative;
-  background-color: rgb(221, 116, 67);
+  background-color: rgb(0, 81, 107);
 }
 main .skills > div:nth-child(7) .skills__level::before {
-  content: "40%";
+  content: "50%";
   position: absolute;
   top: 0;
   right: 0;
 }
 main .skills > div:nth-child(8) {
-  color: rgb(153, 79, 168);
+  color: rgb(221, 116, 67);
 }
 main .skills > div:nth-child(8) .skills__level {
   width: 40%;
   position: relative;
-  background-color: rgb(153, 79, 168);
+  background-color: rgb(221, 116, 67);
 }
 main .skills > div:nth-child(8) .skills__level::before {
   content: "40%";
@@ -190,14 +220,17 @@ main .skills > div:nth-child(8) .skills__level::before {
   top: 0;
   right: 0;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  box-sizing: border-box;
+main .skills > div:nth-child(9) {
+  color: rgb(153, 79, 168);
 }
-
-*::after, *::before {
-  box-sizing: border-box;
+main .skills > div:nth-child(9) .skills__level {
+  width: 40%;
+  position: relative;
+  background-color: rgb(153, 79, 168);
+}
+main .skills > div:nth-child(9) .skills__level::before {
+  content: "40%";
+  position: absolute;
+  top: 0;
+  right: 0;
 }/*# sourceMappingURL=style.css.map */
