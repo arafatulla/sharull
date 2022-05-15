@@ -1,0 +1,56 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #00aaff, #00ff6c);
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+.dial{
+    position: absolute;
+    top: 50%;
+    transform-origin: right;
+    transition: all 0.5s ease-in;
+}
+.seconds{
+    width: 48%;
+    height: 1px;
+    left: 2%;
+    background-color: rgba(129, 127, 127, 0.55);
+    transform: rotate(90deg);
+    z-index: 1;
+}
+.minutes{
+    width: 42%;
+    height: 2px;
+    background-color: black;
+    transform: rotate(90deg);
+    left: 8%;
+    z-index: 2;
+}
+.hours{
+    width: 35%;
+    height: 3.5px;
+    border-radius: 5px;
+    background-color: red;
+    transform: rotate(90deg);
+    left: 15%;
+    z-index: 3;
+}
