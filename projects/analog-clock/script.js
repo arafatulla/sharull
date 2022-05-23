@@ -16,10 +16,14 @@ function updateTime(){
     if(h > 12){
         hour = hour - 12;
     }
-    if(second == 60 || second <= 1){
+    if(second == 60){
         seconds.style.transition = 'none';
+        seconds.style.transform = 'rotate(360deg)';
     } else {
         seconds.style.transition = 'all 0.5s ease-in';
+    }
+    if(second == 1){
+        seconds.style.transform = 'rotate(0deg)';
     }
     
     seconds.style.transform = 'rotate('+ s + 'deg)';
