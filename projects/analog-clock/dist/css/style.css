@@ -19,7 +19,7 @@ body{
 .clock{
     width: 400px;
     height: 400px;
-    background-image: url(.../images/clock.png);
+    background-image: url(../../images/clock.png);
     border-radius: 50%;
     position: relative;
 }
@@ -34,14 +34,12 @@ body{
     height: 1px;
     left: 2%;
     background-color: rgba(129, 127, 127, 0.55);
-    transform: rotate(90deg);
     z-index: 1;
 }
 .minutes{
     width: 42%;
     height: 2px;
     background-color: black;
-    transform: rotate(90deg);
     left: 8%;
     z-index: 2;
 }
@@ -50,7 +48,6 @@ body{
     height: 3.5px;
     border-radius: 5px;
     background-color: red;
-    transform: rotate(90deg);
     left: 15%;
     z-index: 3;
 }
