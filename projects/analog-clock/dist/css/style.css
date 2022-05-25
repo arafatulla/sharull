@@ -19,7 +19,7 @@ body{
 .clock{
     width: 400px;
     height: 400px;
-    background-color: white;
+    background-image: url(./images/clock.png);
     border-radius: 50%;
     position: relative;
 }
