@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./dist/css/style.css">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <div>Hour</div>
+            <div>Minute</div>
+            <div>Second</div>
+        </div>
+        <div class="timer-display" data-display>
+            <div class="hours" data-hours>
+                    <span class="material-symbols-outlined" data-h-increment>
+                        expand_less
+                    </span>
+                <div class="value">00</div>
+                    <span class="material-symbols-outlined" data-h-decrement>
+                        expand_more
+                    </span>
+            </div>
+            <div class="minutes" data-minutes>
+                    <span class="material-symbols-outlined" data-m-increment>
+                        expand_less
+                    </span>
+                <div class="value">00</div>
+                    <span class="material-symbols-outlined" data-m-decrement>
+                        expand_more
+                    </span>
+            </div>
+            <div class="seconds" data-seconds>
+                    <span class="material-symbols-outlined" data-s-increment>
+                        expand_less
+                    </span>
+                <div class="value">00</div>
+                    <span class="material-symbols-outlined" data-s-decrement>
+                        expand_more
+                    </span>
+            </div>
+        </div>
+        <div class="start-button">
+            <button data-button>Start</button>
+        </div>
+    </div>
+
+
+    <script src="./dist/js/script.js"></script>
+</body>
+</html>
